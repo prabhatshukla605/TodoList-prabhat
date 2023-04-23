@@ -4,17 +4,13 @@ import FormComponent from "./Components/FormComponent";
 import ListComponent from "./Components/ListComponent";
 import "./style.css";
 
-function newFeature() {
-  console.log('new feature is added');
-}
-newFeature();
+
 
 
 function App() {
-  console.log('new welocome');
   const [todos, setTodos] = useState([
-    { text: "running", id: "id1" },
-    { text: "cycling", id: "id2" },
+    { text: "Running", id: "id1" },
+    { text: "Study", id: "id2" },
   ]);
   // const todos = [
   //   { text: "running", id: "id1" },
