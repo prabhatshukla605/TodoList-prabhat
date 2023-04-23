@@ -4,9 +4,6 @@ import FormComponent from "./Components/FormComponent";
 import ListComponent from "./Components/ListComponent";
 import "./style.css";
 
-
-
-
 function App() {
   const [todos, setTodos] = useState([
     { text: "Running", id: "id1" },
