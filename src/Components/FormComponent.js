@@ -7,10 +7,12 @@ function FormComponent(props) {
   const inputHandlder = (event) => setInputVal(event.target.value);
   const formSubmitHandler = (event) => {
     event.preventDefault();
-    if (inputVal.length > 0) {
+    if (inputVal.trim().length > 0) {
       props.onUpdate(inputVal);
+
     }
     else {
+      alert('Please enter the value');
       return;
     }
     
@@ -19,7 +21,7 @@ function FormComponent(props) {
     <form>
       <label>To Do List</label>
       <input type="text" onChange={inputHandlder}></input>
-      <button type="submit" onClick={formSubmitHandler}>
+      <button className="add-button" type="submit" onClick={formSubmitHandler}>
         ADD
       </button>
     </form>

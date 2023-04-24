@@ -3,12 +3,12 @@ import "./ListComponent.css";
 
 function ListComponent(props) {
 
-  const itemDeleteHandler = (event) => props.onDelete(event.target.id);
+  const itemDeleteHandler = (event) =>props.onDelete(event.target.value);
 
   return (
     <ul>
       {props.items.map(currItems => <li key={currItems.id}
-          id={currItems.id} onClick={itemDeleteHandler}>{currItems.text}</li>)}
+          id={currItems.id} >{currItems.text}<button value={currItems.id} className="delete-button" onClick={itemDeleteHandler}>Done</button></li>)}
     </ul>
   );
 }
