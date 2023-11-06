@@ -5,10 +5,7 @@ import ListComponent from "./Components/ListComponent";
 import "./style.css";
 
 function App() {
-  const [todos, setTodos] = useState([
-    { text: "Running", id: "id1" },
-    { text: "Study", id: "id2" },
-  ]);
+  const [todos, setTodos] = useState([{}]);
   // const todos = [
   //   { text: "running", id: "id1" },
   //   { text: "cycling", id: "id2" },
